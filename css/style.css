@@ -183,4 +183,9 @@ article#main-col{
   nav {
     display: none !important;
   }
+
+  article#main-col {
+    width: 100% !important;
+    float: none !important;
+  }
 }
