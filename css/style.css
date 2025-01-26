@@ -171,3 +171,19 @@ article#main-col{
 	width:65%;
 }
 
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 12pt;
+  }
+
+  header, nav, #showcase, footer {
+    display: none !important;
+  }
+
+  article#main-col {
+    width: 100% !important;
+    float: none !important;
+  }
+}
