@@ -172,17 +172,27 @@ article#main-col{
 }
 
 @media print {
+  /* Nastav základní styl při tisku: bílý podklad, černý text, větší písmo */
   body {
     background: #fff;
     color: #000;
     font-size: 12pt;
   }
 
-  header, nav, #showcase, footer {
+  /* Skryj všechny tyto bloky, protože je při tisku nepotřebuješ */
+  header,
+  nav,
+  #showcase,
+  #newsletter,
+  #boxes,
+  footer {
     display: none !important;
   }
 
-  article#main-col {
+  /* Pokud bys měl někde hlavní obsah v article#main-col (nebo jiném elementu), 
+     můžeš ho roztáhnout na 100 % šířky: */
+  article#main-col, 
+  section#main-col {
     width: 100% !important;
     float: none !important;
   }
